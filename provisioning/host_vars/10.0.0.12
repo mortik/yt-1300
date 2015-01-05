@@ -1,0 +1,8 @@
+---
+root_user: vagrant
+app: yt-1300
+domain: yt-1300.net
+user: yt-1300
+protocol: http
+htpasswd_user: yt-1300
+htpasswd_password: FQpHRFcNVHKqU
