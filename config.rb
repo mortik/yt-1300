@@ -16,7 +16,7 @@ activate :deploy do |deploy|
   deploy.user     = "yt-1300"
   deploy.build_before = true
   deploy.method = :rsync
-  deploy.host   = "136.243.10.211"
+  deploy.host   = "yt-1300.net"
   deploy.path   = "~/current"
 end
 
