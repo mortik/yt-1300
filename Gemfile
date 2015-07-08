@@ -1,12 +1,12 @@
 source 'http://rubygems.org'
 
-ruby '2.1.5'
+ruby '2.2.2'
 
 gem 'middleman'
 
-gem 'middleman-livereload'
+# gem 'middleman-livereload'
 gem 'middleman-syntax'
-gem 'middleman-deploy'
+gem 'middleman-gh-pages'
 gem 'middleman-bower'
 gem 'jquery-middleman'
 gem 'redcarpet'
