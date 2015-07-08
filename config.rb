@@ -1,6 +1,6 @@
 Encoding.default_external = 'utf-8'
 
-# activate :livereload
+activate :livereload
 activate :syntax
 
 set :css_dir, 'stylesheets'
