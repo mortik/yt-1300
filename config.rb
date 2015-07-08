@@ -3,6 +3,7 @@ Encoding.default_external = 'utf-8'
 activate :livereload
 activate :directory_indexes
 activate :syntax
+activate :bower
 
 set :css_dir, 'stylesheets'
 
