@@ -1,14 +1,21 @@
+# encoding: utf-8
+# frozen_string_literal: true
 Encoding.default_external = 'utf-8'
 
-activate :livereload
 activate :syntax
+activate :sprockets
+activate :directory_indexes
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :sass, line_comments: false
 
-sprockets.append_path File.join root, 'vendor'
+sprockets.append_path "vendor"
+
+configure :development do
+  activate :livereload
+end
 
 configure :build do
   activate :minify_css
@@ -21,7 +28,7 @@ end
 activate :deploy do |deploy|
   deploy.user = "yt-1300"
   deploy.build_before = true
-  deploy.method = :rsync
+  deploy.deploy_method = :rsync
   deploy.host = "yt-1300.net"
   deploy.path = "~/current"
 end
