@@ -17,3 +17,11 @@ configure :build do
   activate :asset_hash
   activate :relative_assets
 end
+
+activate :deploy do |deploy|
+  deploy.user = "yt-1300"
+  deploy.build_before = true
+  deploy.method = :rsync
+  deploy.host = "yt-1300.net"
+  deploy.path = "~/current"
+end
